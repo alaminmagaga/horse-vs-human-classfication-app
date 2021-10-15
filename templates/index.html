@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="{{ url_for('static', filename='w3.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all.css') }}">
+
+    </head>
+    <body>
+    
+    <div class="w3-bar w3-black w3-padding">
+  <a href="#" class="w3-bar-item w3-button w3-padding "  style="width:8%">Home</a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-right w3-padding" >About</a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-padding" >contact</a>
+</div>
+<br>  
+        <div class="w3-row">
+    <div class="w3-col w3-center w3-animate-top" style="width:48%">
+
+    <img class="w3-card-4" src="{{url_for('static', filename='horse.png')}}" alt="Dog" style="width: 80%;height: 350px;">
+
+</div>
+
+  <div class="w3-col w3-center w3-animate-zoom" style="width:4%; margin-top: 100px;">
+
+    <h1><b>VS</b></h1>
+
+  </div>
+
+  <div class="w3-col w3-center w3-animate-bottom" style="width:48%">
+
+   <img class="w3-card-4" src="{{url_for('static', filename='human.png')}}" alt="Dog" style="width: 80%;height: 350px;">
+
+
+  </div>
+
+</div>
+<br>
+
+
+<br>
+
+      <div class="w3-container w3-center">
+  <h4>Upload Your Image For Clasification</h4>
+ <form method="POST" action="/predict" enctype="multipart/form-data">
+            <input class="w3-border w3-round w3-light-teal w3-padding" type="file" name="file" class="btn" required="required" style="width: 50%"><br><br>
+            <input class="w3-padding w3-teal w3-text-white w3-round" type="submit" class="btn" >
+        </form>
+</div>
+
+
+<br>
+<div class="w3-container w3-black">
+
+    <div class="w3-row">
+
+  <div class="w3-half w3-container">
+          <h4>About the App</h4>
+          <p>the app was build with Flask framework,Tensorflow and w3.css(modern css framework) for the application
+.</p>
+
+
+
+
+   </div>
+
+
+<div class="w3-half w3-container w3-center">
+          <h4>Connect With Me</h4>
+          <ul>
+            
+          
+          <a href="alaminmusamagaga.medium.com" target="_blank" >
+            <i class="fa fa-medium fa-4x"></i>
+            
+          </a>
+
+
+          <a href="https://twitter.com/Alamin_Magaga" target="_blank">
+            <i class="fa fa-twitter fa-4x"></i>
+            
+          </a>
+          
+          
+          <a href="https://www.linkedin.com/in/alamin-musa-magaga-8b388118b" target="_blank">
+            <i class="fa fa-linkedin fa-4x"></i>
+          </a>
+          <a href="" target="_blank" >
+            <i class="fa fa-youtube-square fa-4x"></i>
+          </a>
+           <a href="https://github.com/alaminmagaga" target="_blank">
+            <i class="fa fa-github-square fa-4x"></i>
+          </a>
+          
+          <a href="Alaminmusamagaga@mail.com" target="_blank">
+            <i class="fa fa-envelope fa-4x"></i>
+        
+          </a>
+
+
+          <a href="Alaminmusamagaga@mail.com" target="_blank">
+            <i class="fa fa-facebook-square fa-4x"></i>
+        
+          </a>
+
+          
+          
+          </ul>
+    </div>
+    
+
+    
+      <div class="w3-container" id="c4">
+      Made by <a  href="https://twitter.com/Alamin_Magaga" >Alamin M Magaga</a><br/>
+      Founder @<a  href="https://twitter.com/Magtech_Dihub">Magtech Digital Hub</a>
+      </div>
+      
+      </div>
+      <br>
+    </div>
+
+    </body>
+</html>
